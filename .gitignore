@@ -1,7 +1,7 @@
 #npm modules
 qrcode/node_modules/
 
-qrcode/.temp/
+qrcode/.tmp/
 qrcode/dist/
 qrcode/npm-debug.log
 scripts/
