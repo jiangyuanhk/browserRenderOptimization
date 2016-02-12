@@ -58,6 +58,15 @@
         toggleButtonsAbledness();
         return ctx.putImageData(imageData, 0, 0);
       };
+
+      // error handling
+      myWorker.onerror = function (error) {
+        function WorkerException(message) {
+          this.name = "WorkerException";
+          this.message = message;
+        };
+        throw new WorkerException('Worker error.');
+      }
     }
   };
 
